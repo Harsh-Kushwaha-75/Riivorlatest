@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <img src={assets.logo} className='mb-5 w-32' alt="" />
             <p className='w-full md:w-2/3 text-gray-600'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            RIIVOR was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.
             </p>
         </div>
 
@@ -35,8 +35,8 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blank" rel='noopener noreferrer'>
-                      <img src={assets.youtube} className='w-4 h-5 mr-2'  alt="" />
+                    <a href="wa.me/919259797411" target="_blank" rel='noopener noreferrer'>
+                      <img src={assets.whatsapp} className='w-4 h-5 mr-2'  alt="" />
                     </a>
                   </li>
                 </ul>

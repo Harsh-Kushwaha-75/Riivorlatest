@@ -25,7 +25,7 @@ import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import instagram from './instagram.png'
-import youtube from './youtube.png'
+import whatsapp from './whatsapp.png'
 
 export const assets = {
     logo,
@@ -52,7 +52,7 @@ export const assets = {
     stripe_logo,
     cross_icon,
     instagram,
-    youtube,
+    whatsapp,
 }
 
 // export const products = [
