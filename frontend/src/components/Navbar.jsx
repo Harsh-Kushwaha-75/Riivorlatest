@@ -44,19 +44,19 @@ const Navbar = () => {
 
       <div className='flex items-center gap-6'>
             <img onClick={()=> { setShowSearch(true); navigate('/collection') }} src={assets.search_icon} className='w-5 cursor-pointer invert' alt="" />
-            
+    
             <div className='group relative'>
-                <img onClick={()=> token ? null : navigate('/login') } className='w-5 cursor-pointer invert' src={assets.profile_icon} alt="" />
+                <img onClick={() => token ? null : navigate('/login')} className='w-5 cursor-pointer invert' src={assets.profile_icon} alt="" />
                 {/* Dropdown Menu */}
                 {token && 
-                <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
-                    <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-black text-gray-300 rounded'>
-                        <p className='cursor-pointer hover:text-white'>My Profile</p>
-                        <p onClick={()=>navigate('/orders')} className='cursor-pointer hover:text-white'>Orders</p>
-                        <p onClick={logout} className='cursor-pointer hover:text-white'>Logout</p>
+                <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-50'>
+                    <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-white text-black rounded shadow-lg'>
+                        <p className='cursor-pointer'>My Profile</p>
+                        <p onClick={() => navigate('/orders')} className='cursor-pointer'>Orders</p>
+                        <p onClick={logout} className='cursor-pointer'>Logout</p>
                     </div>
                 </div>}
-            </div> 
+            </div>
             <Link to='/cart' className='relative'>
                 <img src={assets.cart_icon} className='w-5 min-w-5 invert' alt="" />
                 <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-white text-black aspect-square rounded-full text-[8px]'>{getCartCount()}</p>
